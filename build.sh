@@ -6,7 +6,7 @@ KERNELDIR=$(pwd)
 CODENAME=Hayzel
 KERNELNAME=TOM
 VARIANT=Stable
-VERSION=Release
+VERSION=4-19-295
 
 TG_TOPIC=0
 BOT_BUILD_URL="https://api.telegram.org/bot$TG_TOKEN/sendDocument"
