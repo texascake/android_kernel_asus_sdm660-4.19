@@ -5,8 +5,8 @@ KERNELDIR=$(pwd)
 # Identity
 CODENAME=Hayzel
 KERNELNAME=TOM
-VARIANT=Stable
-VERSION=Release
+VARIANT=STBL
+VERSION=4-19-315
 
 TG_TOPIC=0
 BOT_BUILD_URL="https://api.telegram.org/bot$TG_TOKEN/sendDocument"
@@ -42,9 +42,10 @@ KERNEL_DEFCONFIG=asus/X00TD_defconfig
 ANYKERNEL3_DIR=$KERNELDIR/AnyKernel3/
 TZ=Asia/Jakarta
 DATE=$(date '+%Y%m%d')
+DATE2=$(date '+%Y%m%d-%H%M')
 BUILD_START=$(date +"%s")
-FINAL_KERNEL_ZIP="$KERNELNAME-$VERSION-$VARIANT-$(date '+%Y%m%d-%H%M')"
 KERVER=$(make kernelversion)
+FINAL_KERNEL_ZIP="$KERNELNAME-$VERSION-$VARIANT-$DATE2"
 
 # Exporting
 export PATH="$KERNELDIR/ew/bin:$PATH"
